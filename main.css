@@ -1,11 +1,82 @@
-/* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+}
 
 body {
   font-family: "Jost", sans-serif;
   background: #efd54e;
   color: #222c5f;
+}
+
+/* =====================
+           HEADER
+======================== */
+
+.header {
+  background: #483d3f;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo a:link,
+.logo a:visited,
+.logo a:active {
+  color: #c52233;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.navigation {
+  background: rgba(26, 31, 22, 0.363);
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.navlink:link,
+.navlink:visited,
+.navlink:active {
+  color: #efd54e;
+  font-size: 1.5rem;
+  text-decoration: none;
+  /* border: magenta solid 2px; */
+}
+
+li {
+  /* border: green solid 4px; */
+  padding: 0.2em 0;
+}
+
+@media (max-width: 480px) /* Mobile */ {
+  .navigation ul {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* =====================
+           HEADER
+======================== */
+
+/* ======================
+            MAIN
+========================= */
+
+main {
+  max-width: 56.25em;
+  width: 95%;
+  margin: 0 auto;
+  background: #cda716;
+}
+
+aside,
+footer {
+  display: none;
 }
