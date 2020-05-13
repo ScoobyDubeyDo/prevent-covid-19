@@ -55,12 +55,6 @@ li {
   padding: 0.2em 0;
 }
 
-@media (max-width: 480px) /* Mobile */ {
-  .navigation ul {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 /* =====================
            HEADER
 ======================== */
@@ -70,13 +64,124 @@ li {
 ========================= */
 
 main {
+  background: #cda716;
+  padding: 1em;
+  /* position: relative;
+  z-index: 2; */
   max-width: 56.25em;
   width: 95%;
   margin: 0 auto;
-  background: #cda716;
+  display: block;
 }
 
-aside,
+main article h2 {
+  color: #c52233;
+  margin: 0.5em 0 0 0;
+}
+
+main article {
+  border-bottom: #ffffff solid 1.2px;
+  padding: 0 0 1em 0;
+}
+
+main article:last-child {
+  border: 0;
+  padding: 0;
+}
+
+main article p {
+  font-size: 1.25rem;
+  margin: 0.7em 0 0 0;
+}
+
+main article li {
+  font-size: 1.25rem;
+  padding: 0;
+  margin: 0.7em 0 0 2.5em;
+  /* border: green solid 4px; */
+}
+
+.menu-button {
+  display: block;
+}
+
+main article:hover,
+main article:focus {
+  background: #efd54e;
+  transition: all ease-out 1.5s;
+}
+
+.menu-button img {
+  min-width: 4em;
+  width: 5%;
+  position: fixed;
+  z-index: 1;
+  bottom: 4%;
+  left: 24%;
+}
+
+@media (max-width: 480px) /* Mobile */ {
+  .navigation ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-button img {
+    left: 10%;
+  }
+}
+
+/* ======================
+            MAIN
+========================= */
+
+/* ======================
+            ASIDE
+========================= */
+
+.sidenav {
+  background: #1a1f16;
+  max-width: 50em;
+  width: 85%;
+  height: 97%;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.side-logo {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.side-logo a:link,
+.side-logo a:visited,
+.side-logo a:active {
+  color: #c52233;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.menu-item:link,
+.menu-item:visited,
+.menu-item:active {
+  color: #818181;
+  text-decoration: none;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 70%;
+  margin: auto 0;
+}
+
 footer {
   display: none;
 }
