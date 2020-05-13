@@ -42,16 +42,18 @@ body {
 }
 
 .navlink:link,
-.navlink:visited,
-.navlink:active {
+.navlink:visited {
   color: #efd54e;
   font-size: 1.5rem;
   text-decoration: none;
-  /* border: magenta solid 2px; */
+}
+
+.navlink:active {
+  color: #c52233;
+  text-decoration: underline;
 }
 
 li {
-  /* border: green solid 4px; */
   padding: 0.2em 0;
 }
 
@@ -66,12 +68,9 @@ li {
 main {
   background: #cda716;
   padding: 1em;
-  /* position: relative;
-  z-index: 2; */
   max-width: 56.25em;
   width: 95%;
   margin: 0 auto;
-  display: block;
 }
 
 main article h2 {
@@ -98,11 +97,6 @@ main article li {
   font-size: 1.25rem;
   padding: 0;
   margin: 0.7em 0 0 2.5em;
-  /* border: green solid 4px; */
-}
-
-.menu-button {
-  display: block;
 }
 
 main article:hover,
@@ -116,19 +110,8 @@ main article:focus {
   width: 5%;
   position: fixed;
   z-index: 1;
-  bottom: 4%;
+  bottom: 6%;
   left: 24%;
-}
-
-@media (max-width: 480px) /* Mobile */ {
-  .navigation ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .menu-button img {
-    left: 10%;
-  }
 }
 
 /* ======================
@@ -182,6 +165,90 @@ main article:focus {
   margin: auto 0;
 }
 
+/* ======================
+            ASIDE
+========================= */
+
+/* ======================
+            FOOTER
+========================= */
 footer {
-  display: none;
+  background: #483d3f;
+  max-width: 56.25em;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.more-info a:link,
+.more-info a:visited,
+.more-info a:active {
+  color: #c52233;
+  text-decoration: none;
+}
+
+.more-info span {
+  color: #efd54e;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  width: 15em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social a:link,
+.social a:visited,
+.social a:active {
+  color: #efd54e;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* ======================
+            FOOTER
+========================= */
+
+@media (max-width: 480px) /* Mobile */ {
+  .navigation ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-button img {
+    left: unset;
+    bottom: unset;
+    right: 10%;
+    top: 15%;
+  }
+
+  .logo a:link,
+  .logo a:visited,
+  .logo a:active {
+    font-size: 2.5rem;
+  }
+
+  .navlink:link,
+  .navlink:visited,
+  .navlink:active {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .more-info {
+    justify-content: center;
+    margin: 0.5em 0;
+  }
+
+  .social {
+    width: 100%;
+  }
 }

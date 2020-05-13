@@ -10,7 +10,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $("#up,.menu-item").click(function () {
     $("header").show(1000);
-    $(".sidenav").hide(100);
+    $(".sidenav").hide(1000);
     $(".menu-button").show(1000);
     $("main").css({ padding: "1em" });
   });
