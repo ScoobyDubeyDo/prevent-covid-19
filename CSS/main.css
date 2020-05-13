@@ -214,6 +214,25 @@ footer {
             FOOTER
 ========================= */
 
+.hidden {
+  display: none;
+}
+
+article input[type="button"] {
+  background: #222c5f;
+  color: #efd54e;
+  border-radius: 15px;
+  padding: 0 1em;
+  margin: 0.5em 0 0 0;
+  border: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+article input[type="button"] {
+  outline: none;
+}
+
 @media (max-width: 480px) /* Mobile */ {
   .navigation ul {
     flex-direction: column;
