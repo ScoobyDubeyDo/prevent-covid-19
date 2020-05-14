@@ -106,7 +106,8 @@ main article:focus {
   transition: all ease-out 1.5s;
 }
 
-.menu-button img {
+.menu-button img,
+.top-button img {
   min-width: 4em;
   width: 5%;
   position: fixed;
@@ -234,13 +235,27 @@ article input[type="button"] {
   outline: none;
 }
 
+/* RUMOURS PAGE */
+article h1 {
+  color: #c52233;
+  margin: 1em 0;
+  border-bottom: #ffffff solid 1.2px;
+}
+
+article h1:last-child {
+  border: 0;
+}
+
+/* RUMOURS PAGE */
+
 @media (max-width: 480px) /* Mobile */ {
   .navigation ul {
     flex-direction: column;
     text-align: center;
   }
 
-  .menu-button img {
+  .menu-button img,
+  .top-button img {
     left: unset;
     bottom: unset;
     right: 10%;
@@ -270,5 +285,9 @@ article input[type="button"] {
 
   .social {
     width: 100%;
+  }
+
+  article h1 {
+    font-size: 1rem;
   }
 }
