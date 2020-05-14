@@ -48,7 +48,8 @@ body {
   text-decoration: none;
 }
 
-.navlink:active {
+.navlink:active,
+.navlink:focus {
   color: #c52233;
   text-decoration: underline;
 }
