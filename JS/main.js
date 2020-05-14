@@ -17,6 +17,22 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  $("#long-nav").click(function () {
+    $(".sidenav").hide(1000);
+    $(".sidenav2").show(1000);
+  });
+});
+
+$(document).ready(function () {
+  $("#back,.menu-item2").click(function () {
+    $("header").show(1000);
+    $(".sidenav2").hide(1000);
+    $(".menu-button").show(1000);
+    $("main").css({ padding: "1em" });
+  });
+});
+
+$(document).ready(function () {
   $(".read").click(function () {
     $(".more").toggle(1000);
   });
