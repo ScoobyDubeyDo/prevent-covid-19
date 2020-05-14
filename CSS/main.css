@@ -248,6 +248,37 @@ article h1:last-child {
 
 /* RUMOURS PAGE */
 
+/* PRECAUTIONS PAGE */
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#sixth > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sixth h3 {
+  color: #c52233;
+}
+
+#sixth img {
+  width: 20%;
+}
+/* PRECAUTIONS PAGE */
 @media (max-width: 480px) /* Mobile */ {
   .navigation ul {
     flex-direction: column;
@@ -289,5 +320,9 @@ article h1:last-child {
 
   article h1 {
     font-size: 1rem;
+  }
+
+  #sixth img {
+    width: 0;
   }
 }
