@@ -336,4 +336,10 @@ article h1:last-child {
   #sixth img {
     width: 0;
   }
+
+  .side-logo2 a:link,
+  .side-logo2 a:visited,
+  .side-logo2 a:active {
+    font-size: 1.75rem;
+  }
 }
