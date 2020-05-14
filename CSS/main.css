@@ -6,7 +6,7 @@
 
 body {
   font-family: "Jost", sans-serif;
-  background: #efd54e;
+  background: #ffffff;
   color: #222c5f;
 }
 
@@ -43,7 +43,7 @@ body {
 
 .navlink:link,
 .navlink:visited {
-  color: #efd54e;
+  color: #f0eaea;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -67,7 +67,7 @@ li {
 ========================= */
 
 main {
-  background: #cda716;
+  background: #f5deb3;
   padding: 1em;
   max-width: 56.25em;
   width: 95%;
@@ -102,8 +102,9 @@ main article li {
 
 main article:hover,
 main article:focus {
-  background: #efd54e;
-  transition: all ease-out 1.5s;
+  background: #f0eaea;
+  border-radius: 15px;
+  transition: all ease-out 500ms;
 }
 
 .menu-button img,
@@ -201,7 +202,7 @@ footer {
 }
 
 .more-info span {
-  color: #efd54e;
+  color: #f0eaea;
 }
 
 .more-info {
@@ -218,7 +219,7 @@ footer {
 .social a:link,
 .social a:visited,
 .social a:active {
-  color: #efd54e;
+  color: #f0eaea;
   text-decoration: none;
   font-size: 2rem;
 }
@@ -233,7 +234,7 @@ footer {
 
 article input[type="button"] {
   background: #222c5f;
-  color: #efd54e;
+  color: #f0eaea;
   border-radius: 15px;
   padding: 0 1em;
   margin: 0.5em 0 0 0;
